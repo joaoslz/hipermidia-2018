@@ -1,0 +1,39 @@
+body {
+    font-family: Lato, Arial, sans-serif;
+    width: 960px;
+    
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.cabecalho {
+    text-align: center;
+}
+
+#email {
+    text-decoration: none;
+}
+
+h2 {
+    margin-top: 40px;
+   background-color: #2b5a19;
+   color: #EEE;
+   padding-left: 20px; 
+   padding-top: 10px;
+    padding-bottom: 4px;
+    border-top-left-radius: 150px
+
+/* padding: 15px 0 5px 10px; */
+    
+  /* padding: 5px 10px;  */
+    
+} 
+
+.experiencia {
+    text-indent: 4ch; /* 10px; */
+}
+
+.tec {
+    font-family: "Courier New", cursive;
+    font-weight: 600;
+}
