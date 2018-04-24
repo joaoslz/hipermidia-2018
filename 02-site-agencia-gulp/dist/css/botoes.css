@@ -1,0 +1,27 @@
+.btn {
+   text-decoration: none;
+   color: #FFF;
+   padding: 0.8rem 1.2rem;
+   display: inline-block;
+}
+
+.btn--azul {
+   background-color: #2F5572;
+}
+
+.btn--laranja {
+   background-color: #d59541;
+}
+
+.btn--grande {
+  /* font-size: 1.25rem; */
+  font-size: 0.9rem;  
+   padding: 0.6rem 1rem;
+
+}
+   @media(min-width: 530px) {
+     .btn--grande {
+       padding: 1rem 1.6rem;
+       font-size: 1.25rem;
+     }
+   }

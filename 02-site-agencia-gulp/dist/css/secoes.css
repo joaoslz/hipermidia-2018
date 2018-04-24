@@ -1,0 +1,233 @@
+/* seções da página */
+
+.secao-pagina {
+    /* padding: 4.5rem 0; */
+    padding: 0.5rem 0;
+    
+}
+
+@media(min-width: 800px) {
+   .secao-pagina {
+      padding: 4.5rem 0;
+   }
+}
+
+.secao-pagina__azul {
+   color: #EEE;
+   background-color: #2f5572;
+}
+
+/* ---- incluido na versao 3 ----- */
+
+.secao-titulo {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+  @media(min-width: 530px) {
+     .secao-titulo {
+         font-size: 3.7rem;
+    }
+  }
+
+.secao-titulo__icone {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5rem;
+}
+
+  @media(min-width: 530px) {
+    .secao-titulo__icone {
+       margin-right: 0.5rem;
+       margin-left: 0;
+      margin-bottom: 0;
+       display: inline-block;
+     }
+  }
+
+
+.secao-titulo--azul {
+  color: #2f5572;
+} 
+
+/* TODO: Analisar se deve ficar em outro arquivo */
+.font-weight-500 {
+  font-weight: 500;
+}
+
+/* --- Bloco item-servico ---------- */
+.item-servico {
+  position: relative;
+  padding-bottom: 2rem;
+}
+  
+  @media(min-width: 530px) {
+     .item-servico {
+       padding-left: 90px;
+     }
+  }
+
+
+.item-servico__icone {
+  display: block;
+  margin: 0 auto;
+  
+}
+   @media(min-width: 530px) {
+     .item-servico__icone {
+       position: absolute;
+       left: 0;
+     }
+   }
+
+
+.item-servico__titulo {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-top: 0.6em;
+  margin-bottom: 0.6rem;
+  text-align: center;
+}
+
+  @media(min-width: 530px) {
+     .item-servico__titulo {
+        text-align: left;
+        font-size: 1.8rem;
+        margin-top: 1em;
+     }
+  }
+
+
+/* -------- Bloco subtitulo ---------------*/
+.subtitulo {
+   font-weight: 300;
+   /* font-size: 2.8rem; */
+   font-size: 1.8rem;
+   color: #2f5572;
+}
+
+     @media(min-width: 530px) {
+       .subtitulo {
+         font-size: 2.8rem;
+       }
+     }
+
+.subtitulo--centralizado {
+   text-align: center;
+}
+
+.subtitulo--laranja {
+   color: #d59541;
+}
+
+.subtitulo--pequeno {
+   /*font-size: 1.8rem; */
+   font-size: 1.2rem;
+}
+
+   @media(min-width: 530px) {
+     .subtitulo--pequeno {
+        font-size: 1.8rem;
+     }
+   }
+
+.subtitulo--estreito {
+   max-width: 550px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.subtitulo--fino {
+   font-weight: 100;
+}
+
+.subtitulo--margem-inf-peq {
+   margin-bottom: 0.5em;
+}
+
+.subtitulo--margem-inf-grande {
+   margin-bottom: 1.6em;
+}
+.subtitulo--margem-sup-0 {
+  margin-top: 0;
+}
+
+
+/* ------ incluido na versao 4 ------- */
+
+.secao-pagina--testemunhas {
+  background-color: #E0E6EF;
+}
+
+   @media(min-width: 800px) {
+      .secao-pagina--testemunhas {
+        background:url(../imagens/testemunha-bg.jpg) top                center no-repeat;
+        background-size: cover;
+     }
+  }
+
+
+
+/* ------- Bloco Testemunhas -------- */
+.testemunha {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0 0.6rem 0.2rem 0.6rem;
+  margin-bottom: 95px;
+}
+
+    @media(min-width: 530px) {
+      .testemunha {
+        padding: 0 1rem 0.5rem 1rem;
+      }
+
+    }
+
+    @media(min-width: 800px) {
+      .testemunha {
+        padding: 0 1.8rem 1rem 1.8rem;
+        margin-bottom: 0;
+      }
+
+    }
+
+.testemunha__foto {
+  border-radius: 50%;
+  display: block;
+  width: 160px;
+  height: 160px;
+  
+  margin: 0 auto -80px auto;
+  position: relative;
+  top: -80px;
+  
+  border: 7px SOLID rgba(255, 255, 255, 0.7); 
+}
+
+.testemunha__titulo {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #2f5572;
+  margin: 0;
+}
+
+.testemunha__subtitulo {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #d59541;
+  margin: 0.25rem 0 1rem 0;
+}
+
+.testemunha__descricao {
+  font-weight: 300;
+  line-height: 150%;
+}
+
+
+
+
+
+

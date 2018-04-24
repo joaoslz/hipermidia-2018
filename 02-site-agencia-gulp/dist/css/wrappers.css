@@ -1,0 +1,51 @@
+/* wrappers */
+.container {
+   
+    padding-left: 1.1em;
+    padding-right: 1.1em; 
+
+   /* seçao-pagina */
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  /* tela media */ 
+  @media(min-width: 800px) {
+    .container {
+        max-width: 976px;
+
+    }
+  }
+
+.container--sem-padding-tela-pequena {
+     padding-left: 0;
+     padding-right: 0; 
+  }
+
+@media(min-width: 530px) {
+  .container--sem-padding-tela-pequena {
+     padding-left: 1.1em;
+     padding-right: 1.1em; 
+  }
+}
+
+.imagem-centro {
+   text-align: center;
+}
+
+.box-conteudo p {
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0 0 1.8rem 0;
+}
+  /* small */ 
+  @media(min-width: 530px) {
+    .box-conteudo p {
+       font-size: 1.1rem;
+    }
+  }  
+
+/* a cor do link vamos configurar no arquivo global.css */
+.box-conteudo p a {
+  font-weight: bold;
+}
