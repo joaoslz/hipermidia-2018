@@ -1,4 +1,5 @@
-.row {
+#row {
+  padding: 5px;
 }
 
 .row::after {
@@ -6,8 +7,6 @@
   clear: both;
   display: table;
 }
-
-
 
 @media(min-width: 800px) {
   .row__col--4 {

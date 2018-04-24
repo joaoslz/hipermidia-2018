@@ -4,6 +4,8 @@ const clean = require('gulp-clean');
 const concat = require('gulp-concat');
 const htmlReplace = require('gulp-html-replace');
 const cleanCSS = require('gulp-clean-css');
+const browserSync = require('browser-sync');
+const csslint = require('gulp-csslint');
 
 gulp.task('default', ['copy'], function() {
     gulp.start('build-img', 'merge-css', 'html-replace' );
@@ -47,8 +49,34 @@ gulp.task('merge-css', function() {
     gulp.src('src/**/*.html')
     .pipe(htmlReplace({css:'css/site.css'}) )
     .pipe(gulp.dest('dist') );
+ });
 
- })
+
+ /* browser sync */
+ gulp.task('browser-sync', function() {
+     browserSync.init({
+         server: {
+             baseDir: 'src'
+         }
+     });
+     gulp.watch('src/**/*')
+         .on('change',  browserSync.reload );        
+
+ });
+
+  
+ //     gulp.watch('src/**/*')
+ //     .on('change',  function() {
+ //       browserSync.reload();
+ //      });        
+
+ 
+ /* monitorar erros em arquivos css */
+gulp.task('css-observer', function() {
+  gulp.src('src/css/*.css')
+    .pipe(csslint() )
+    .pipe(csslint.formatter() );
+});
 
 
  
