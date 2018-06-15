@@ -1,0 +1,59 @@
+.barra-superior {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(47, 85, 114, 0.3);
+  padding: 0.8rem;
+}
+
+.barra-superior--container-btn {
+  float: right;
+}
+
+.barra-superior__logo {
+  position: absolute;
+  top: 0;
+  background-color: #2f5572;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+/* bloc nav-primaria */
+.nav-primaria {
+   
+}
+
+.nav-primaria__a-direita {
+  float: right;
+}
+
+
+.nav-primaria ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+ 
+}
+
+.nav-primaria ul::after {
+  content: "";
+  clear: both;
+  display: table;
+   
+}
+
+.nav-primaria ul li {
+  padding-right: 1.1rem;
+  padding-top: 0.7rem;
+  display: inline-block;
+   
+}
+
+.nav-primaria ul li a {
+ color: #FFF;
+  text-decoration: none;
+  font-weight: 300;
+   
+}
+
+

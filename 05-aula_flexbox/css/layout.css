@@ -1,0 +1,61 @@
+.cabecalhoPrincipal .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalhoPrincipal-nav {
+    display: flex;
+}
+
+.conteudoPrincipal .conteudoPrincipal-servicos {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.conteudoPrincipal-servicos-link {
+ width: 23%;
+}
+
+/* ------- Seção Vídeo Institucional ------- */
+.videoSobre .container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.videoSobre-sobre {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 1;
+}
+
+.videoSobre-video {
+    flex-grow: 1;
+}
+
+
+/* ----------- rodapé ------------- */
+
+
+.rodapePrincipal-parceiros .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rodapePrincipal-parceiros-list {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}

@@ -1,12 +1,17 @@
-#row {
+/* ----------------------------------------*\
+   grid.css 
+\*-----------------------------------------*/
+.row {
   padding: 5px;
+
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+
 
 @media(min-width: 800px) {
   .row__col--4 {
@@ -28,13 +33,14 @@
     float: none;
     display: flex;
   }
-  
 }
 
 @media(min-width: 800px) {
   .row__col--pr2 {
     padding-right: 2rem;
   }
+
+}
 
 
 @media(min-width: 530px) {
@@ -53,5 +59,3 @@
 .row--pt {
   padding-top: 80px; 
 }
-
-

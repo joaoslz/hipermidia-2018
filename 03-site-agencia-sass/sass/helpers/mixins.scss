@@ -1,0 +1,21 @@
+
+// mixins
+
+@mixin texto-sombreado {
+    -webkit-text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+@mixin texto-sombreado-param($largura, $altura, $blur) {
+    -webkit-text-shadow: 2px 2px 1px rgba($largura, $altura, $blur, 0.1);
+    -moz-text-shadow: 2px 2px 1px rgba($largura, $altura, $blur, 0.1);
+         text-shadow: 2px 2px 1px rgba($largura, $altura, $blur, 0.1);
+}
+  
+@mixin clearfix {
+    &::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+ }

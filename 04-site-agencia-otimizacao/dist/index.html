@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <title>Clear Viagens</title>
+  <meta name="keywords" content="Planejamento de viagens, pacotes de viagens, viagens exoticas, viagens com preços acessíveis">
+  <meta name="description" content="Viagens inesquecíveis. Criamos jornadas de restauração de almas que o inspiram a ser você.">
+
+  <link rel="stylesheet" href="css/site.css">
+    
+</head>
+
+<body>
+  <header class="barra-superior">
+    <div class="container">
+      
+      <div class="barra-superior__logo">
+         <div>Realizando Sonhos</div>
+      </div>
+      
+      <div class="barra-superior--container-btn">
+        <a class="btn btn--azul" href="#">Entre em Contato</a>
+      </div>
+
+      <nav class="nav-primaria 
+                  nav-primaria__a-direita">
+        <ul>
+          <li><a href="#como-iniciou">Nossa Historia</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#testemunhas">Testimunhas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="jumbotron">
+
+    <picture>
+      <source srcset="imagens/paisagem--large.jpg 1920w, 
+                     imagens/paisagem--large-hi-dpi.jpg 3840w " media="(min-width: 1380px)">
+
+      <source srcset="imagens/paisagem--medium.jpg 1380w,
+                     imagens/paisagem--medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
+
+      <source srcset="imagens/paisagem--small.jpg 990w,
+                     imagens/paisagem--small-hi-dpi.jpg 1980w" media="(min-width: 640px)">
+
+      <img srcset="imagens/paisagem--smaller.jpg 640w,
+                  imagens/paisagem--smaller-hi-dpi.jpg 1280w" alt="Uma linda Vista costeira do oceano e das montanhas" class="jumbotron__image">
+    </picture>
+
+    <div class="jumbotron__text-content">
+      <div class="container">
+        <!--mudou de padding-x para container-->
+        <!--incluido depois do layout responsivo-->
+        <h1 class="jumbotron__titulo">Viagens Incríveis</h1>
+        <h2 class="jumbotron__subtitulo">Uma experiência única.</h2>
+        <p class="jumbotron__descricao">Propocionamos momentos incrívéis que inspiram você a ser você.</p>
+        <p><a class="btn btn--laranja btn--grande" href="#">Começe hoje</a></p>
+      </div>
+    </div>
+  </div>
+
+  <section id="como-iniciou" class="secao-pagina">
+
+    <div class="container">
+      <!--mudou de padding-x para container-->
+
+      <h2 class="subtitulo subtitulo--centralizado subtitulo--fino subtitulo--margem-inf-peq">A primeira viagem que planejamos <strong>foi a nossa</strong></h2>
+      <h3 class="subtitulo subtitulo--centralizado subtitulo--laranja 
+               subtitulo--pequeno subtitulo--estreito subtitulo--fino subtitulo--margem-inf-grande">Desde então, proporcionamos a melhor experiência de <strong>viagens para todos</strong>.</h3>
+
+      <div class="imagem-centro">
+        <img src="imagens/primeira-viagem.jpg">
+      </div>
+
+      <!--Importante: explicar o layout de colunas-->
+      <article class="row">
+        <div class="row__col--4 row__col--pr2">
+          <!--<img src="imagens/como-comecou.jpg" alt="Nossa fundadora, Jane da Silva">-->
+          <picture>
+            <source srcset="imagens/como-comecou.jpg" media="(min-width:1020px)">
+            <source srcset="imagens/como-comecou-portrait.jpg" media="(min-width:800px)">
+            <img src="imagens/como-comecou-landscape.jpg" alt="Nossa fundadora, Jane da Silva">
+          </picture>
+        </div>
+        <div class="row__col--8">
+          <!--adicionado depois - discutir quando nao usar a metologia BEM-->
+          <div class="box-conteudo">
+            <h2 class="subtitulo subtitulo--margem-sup-0">Veja como tudo começou &hellip;</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation</a> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Duis aute irure dolor in <strong>reprehenderit in</strong> voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
+          </div>
+        </div>
+        <!--<div class="clear-me"></div>-->
+      </article>
+    </div>
+    <!-- container -->
+
+  </section>
+
+  <section id="servicos" class="secao-pagina secao-pagina__azul">
+    <div class="container">
+      <!-- <img src="imagens/icons/star.svg">
+       <h2>Nossos Serviços</h2> -->
+
+
+      <h2 class="secao-titulo">
+        <img class="secao-titulo__icone" src="imagens/icons/star.svg"> Nossos <strong class="font-weight-500">Serviços</strong></h2>
+
+      <div class="row box-conteudo">
+        <div class="row__col--6 row__col--pr4">
+
+          <div class="item-servico">
+            <!--adicionado na versao 3-->
+            <img class="item-servico__icone" src="imagens/icons/rain.svg">
+            <h3 class="item-servico__titulo">Veja a previsão do tempo</h3>
+            <p>Baixe nosso aplicativo e vamos enviar-lhe um aviso se está prestes a chover nos próximos 20 minutos em torno de sua localização atual. Uma boa chuva pode ser refrescante, mas às vezes você só quer ficar bem abrigado.</p>
+          </div>
+
+          <div class="item-servico">
+
+            <img class="item-servico__icone" src="imagens/icons/globe.svg">
+            <h3 class="item-servico__titulo">Guia Incrível</h3>
+            <p>Nós já percorremos todo os cantos do planeta para os melhores destinos e belas paisagens. Se há um canto do mundo você quer fugir, nós conhecemos os locais mais belos e inspiradores.</p>
+          </div>
+        </div>
+
+        <div class="row__col--6">
+          <div class="item-servico">
+            <img class="item-servico__icone" src="imagens/icons/wifi.svg">
+            <h3 class="item-servico__titulo">Wi-Fi Zone</h3>
+            <p>Nós priorizamos viagens para lugares que você possa pessoalmente atestar como sendo incrível. O que significa que temos mapeado os locais com Wi-fi disponivel. Também disponibilizamos um mapa com estas informações.</p>
+          </div>
+
+          <div class="item-servico">
+            <img class="item-servico__icone" src="imagens/icons/fire.svg">
+            <h3 class="item-servico__titulo">Kit de sobrevivência</h3>
+            <p>Toda vez que você fizer uma reservar lhe enviamos um kit de sobrevivência com os melhores materiais. O kit permitirá que você monte uma tenda, iniciar um fogueira, e até como pagar menos impostos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="testemunhas" class="secao-pagina secao-pagina--testemunhas">
+    <div class="container container--sem-padding-tela-pequena">
+
+      <h2 class="secao-titulo secao-titulo--azul">
+        <img class="secao-titulo__icone" src="imagens/icons/comment.svg">
+        <strong class="font-weight-500">Depoimentos</strong> Reais
+      </h2>
+
+      <div class="row row--pt row--mesma-altura-tela-media">
+        <div class="row__col--4 row__col--pr2">
+          <div class="testemunha">
+            <img class="testemunha__foto" src="imagens/testemunha-renata.jpg">
+            <h3 class="testemunha__titulo">Renata Vasconcelos</h3>
+            <h4 class="testemunha__subtitulo">9 Viagens</h4>
+            <p class="testemunha__descricao">&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
+          </div>
+        </div>
+        <div class="row__col--4 row__col--pr2">
+          <div class="testemunha"> 
+            <div>
+              <img src="imagens/testemunha-joao.jpg" class="testemunha__foto">
+            </div>
+            <h3 class="testemunha__titulo">João Pedro</h3>
+            <h4 class="testemunha__subtitulo">4 Viagens</h4>
+            <p class="testemunha__descricao">&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.&rdquo;</p>
+          </div>
+        </div>
+
+        <div class="row__col--4">
+          <div class="testemunha testemunha--ultima">
+          <img class="testemunha__foto" src="imagens/testemunha-cat.jpg">
+          <h3 class="testemunha__titulo">Gata Mimi</h3>
+          <h4 class="testemunha__subtitulo">6 Viagens</h4>
+          <p class="testemunha__descricao">&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.&rdquo;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--  <footer class="rodape">
+    <div class="container">
+       <p>Copyright &copy; 2017 Todos os direitos reservados.
+      <a href="#" class="btn btn--laranja">Entre em Contato</a></p>
+      </div>
+  </footer> -->
+  
+    <footer class="rodape">
+    <div class="container">
+       <p><span class="rodape__texto">Copyright &copy; 2017 Todos os direitos reservados.</span>
+           <a href="#" class="btn btn--laranja">Entre em Contato</a>
+      </p>
+      </div>
+  </footer>
+  
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+/* ----------------------------------------*\
+   topo da página com a imagem de fundo
+\*-----------------------------------------*/
+
+.jumbotron {
+  position: relative; /* 1 */
+  border-bottom: 10px solid #2F5572;
+   
+   /* depois de estilizar toda a imagem com a sua descrição.
+      Como a imagem tem diplay inline tera um pequeno espaçamento entre a imagem e
+      e esta borda. Precisamos definir a imagem como display block. 
+      Para tanto, vamos criar um modificador .jumbotron__image {display: block }  */       
+}
+
+.jumbotron__image {
+   display: block;
+} 
+
+/* 2 */
+.jumbotron__text-content {
+   
+/*01 - position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       text-align: center;   */
+    
+  position: absolute;
+  top: 50%;
+  left: 0;
+   
+  transform: translateY(-50%); /* testar 100% e 0% */
+  width: 100%;
+   
+  text-align: center;
+}
+/* ---------------------------- */
+
+/* Vamos evitar seletores do tipo 
+   .jumbotron h1 { ...  } 
+   Falar do BEM
+*/
+
+/* primeiro no html  */
+.jumbotron__titulo {
+   /*font-size: 4.5rem; */
+   /*font-size: 1.1rem;  */ /* mobile first */
+   font-size: 2rem; /* mobile first */
+   font-weight: 300;
+   color: #2f5572;
+   /* por ultimo */
+   margin: 0;
+   
+}
+   /* */
+   @media(min-width: 530px) {
+       .jumbotron__titulo {
+           font-size: 2.8rem;
+        }
+    }
+
+   @media(min-width: 800px) {
+       .jumbotron__titulo {
+           font-size: 3.2rem;
+        }
+    }
+
+
+   @media(min-width: 1200px) {
+       .jumbotron__titulo {
+           font-size: 4.6rem;
+        }
+    }
+
+.jumbotron__subtitulo {
+   font-size: 1.1rem;
+   font-weight: 300;
+   color: #2f5572;
+   /* por ultimo */
+   margin: 0;
+}
+
+   @media(min-width: 530px) {
+       .jumbotron__subtitulo {
+           font-size: 1.9rem;
+        }
+    }
+
+    @media(min-width: 800px) {
+       .jumbotron__subtitulo {
+           font-size: 2.8rem;
+        }
+    }
+
+.jumbotron__descricao {
+   color: #FFF;
+   /* font-size: 1.6rem; */
+   font-size: 1.1rem; /* mobile first */
+   font-weight: 200;
+   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+   max-width: 30ch; 
+   margin-left: auto;
+   margin-right: auto;
+   
+}
+
+    @media(min-width: 530px) {
+        .jumbotron__descricao {
+              font-size: 1.6rem;
+        }
+    }
+
+
+

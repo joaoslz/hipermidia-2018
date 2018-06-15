@@ -1,0 +1,22 @@
+/* ----------------------------------------*\
+        css principal
+\*-----------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #d59541;
+}
+
+
